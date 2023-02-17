@@ -219,7 +219,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -227,7 +227,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -235,7 +235,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       }
@@ -245,7 +245,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/script.js",
         "name": "",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -253,7 +253,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/script.js",
         "name": "*",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -261,7 +261,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/script.js",
         "name": "default",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       }
@@ -383,7 +383,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/copy-button.tsx",
         "name": "",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -391,7 +391,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/copy-button.tsx",
         "name": "*",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -399,7 +399,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/copy-button.tsx",
         "name": "CopyButton",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -407,7 +407,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/copy-button.tsx",
         "name": "CopyNpmCommandButton",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -415,7 +415,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/copy-button.tsx",
         "name": "CopyWithClassNames",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       }
@@ -1259,7 +1259,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -1267,7 +1267,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "*",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       },
@@ -1275,7 +1275,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "default",
         "chunks": [
-          "app/page:app/page"
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
         ],
         "async": false
       }
@@ -1391,8 +1391,8 @@ self.__RSC_MANIFEST={
       "static/css/_app-client_styles_mdx_css.css"
     ],
     "/Users/chrisc/Desktop/www/app/layout": [
-      "static/css/_app-client_styles_globals_css.css",
-      "static/css/_app-client_node_modules_next_font_google_target_css_path_app_layout_tsx_import_Poppins_argum-07b3c8.css"
+      "static/css/_app-client_node_modules_next_font_google_target_css_path_app_layout_tsx_import_Poppins_argum-07b3c8.css",
+      "static/css/_app-client_styles_globals_css.css"
     ]
   },
   "/Users/chrisc/Desktop/www/node_modules/next/dist/client/script.js": {
@@ -1400,7 +1400,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/script.js",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -1408,7 +1408,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/script.js",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -1416,7 +1416,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/script.js",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     }
@@ -1426,7 +1426,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/script.js",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -1434,7 +1434,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/script.js",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -1442,7 +1442,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/script.js",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     }
@@ -2056,7 +2056,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -2064,7 +2064,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -2072,7 +2072,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     }
@@ -2082,7 +2082,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -2090,7 +2090,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -2098,7 +2098,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     }
@@ -2220,7 +2220,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./components/copy-button.tsx",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -2228,7 +2228,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./components/copy-button.tsx",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -2236,7 +2236,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./components/copy-button.tsx",
       "name": "CopyButton",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -2244,7 +2244,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./components/copy-button.tsx",
       "name": "CopyNpmCommandButton",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -2252,7 +2252,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./components/copy-button.tsx",
       "name": "CopyWithClassNames",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     }
@@ -3096,7 +3096,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -3104,7 +3104,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -3112,7 +3112,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     }
@@ -3122,7 +3122,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -3130,7 +3130,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     },
@@ -3138,7 +3138,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],
       "async": false
     }
@@ -3360,21 +3360,21 @@ self.__RSC_MANIFEST={
       ]
     }
   },
-  "/Users/chrisc/Desktop/www/node_modules/@next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Poppins\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-sans\",\"display\":\"swap\",\"weight\":[\"100\",\"200\",\"300\",\"400\",\"500\",\"600\",\"700\"]}],\"variableName\":\"fontSans\"}": {
-    "default": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/_app-client_node_modules_next_font_google_target_css_path_app_layout_tsx_import_Poppins_argum-07b3c8.css"
-      ]
-    }
-  },
   "/Users/chrisc/Desktop/www/styles/globals.css": {
     "default": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/_app-client_styles_globals_css.css"
+      ]
+    }
+  },
+  "/Users/chrisc/Desktop/www/node_modules/@next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Poppins\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-sans\",\"display\":\"swap\",\"weight\":[\"100\",\"200\",\"300\",\"400\",\"500\",\"600\",\"700\"]}],\"variableName\":\"fontSans\"}": {
+    "default": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/_app-client_node_modules_next_font_google_target_css_path_app_layout_tsx_import_Poppins_argum-07b3c8.css"
       ]
     }
   }

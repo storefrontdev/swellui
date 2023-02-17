@@ -39,6 +39,18 @@ const RadixProperties = defineNestedType(() => ({
   },
 }))
 
+const SwellProperties = defineNestedType(() => ({
+  name: "SwellProperties",
+  fields: {
+    link: {
+      type: "string",
+    },
+    api: {
+      type: "string",
+    },
+  },
+}))
+
 export const Doc = defineDocumentType(() => ({
   name: "Doc",
   filePathPattern: `docs/**/*.mdx`,
@@ -59,6 +71,10 @@ export const Doc = defineDocumentType(() => ({
     radix: {
       type: "nested",
       of: RadixProperties,
+    },
+    swell: {
+      type: "nested",
+      of: SwellProperties,
     },
   },
   computedFields,

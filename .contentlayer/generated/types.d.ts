@@ -17,6 +17,7 @@ export type Doc = {
   description: string
   published: boolean
   radix?: RadixProperties | undefined
+  swell?: SwellProperties | undefined
   /** MDX file body */
   body: MDX
   slug: string
@@ -32,6 +33,16 @@ export type RadixProperties = {
   link?: string | undefined
   api?: string | undefined
 
+}
+
+export type SwellProperties = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'SwellProperties'
+  link?: string | undefined
+  api?: string | undefined
+
 }  
 
 /** Helper types */
@@ -42,8 +53,8 @@ export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 export type DocumentTypes = Doc
 export type DocumentTypeNames = 'Doc'
 
-export type NestedTypes = RadixProperties
-export type NestedTypeNames = 'RadixProperties'
+export type NestedTypes = RadixProperties | SwellProperties
+export type NestedTypeNames = 'RadixProperties' | 'SwellProperties'
 
 
 export interface ContentlayerGenTypes {
@@ -66,6 +77,7 @@ export type DocumentTypeMap = {
 
 export type NestedTypeMap = {
   RadixProperties: RadixProperties
+  SwellProperties: SwellProperties
 }
 
  
