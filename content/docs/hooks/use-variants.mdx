@@ -1,0 +1,33 @@
+---
+title: useVariants()
+description: A hook that uses the current product's variants
+---
+
+
+## Installation
+
+1. Copy the useVariants() hook into your project:
+
+```jsx
+
+  'use client'
+
+
+  export const useVariants = (product: any) => {
+    const [variants, setVariants] = useState([]);
+
+    function unique(value: any, index: any, self: string | any[]) {
+      return self.indexOf(value) === index;
+    }
+
+
+    useEffect(() => {
+      setVariants(product?.variants?.results?.flat()); 
+    }, [product]);
+
+    return variants?.filter(unique);
+  }
+
+
+
+```
