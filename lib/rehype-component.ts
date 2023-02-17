@@ -5,7 +5,7 @@ import { u } from "unist-builder"
 import { visit } from "unist-util-visit"
 
 export function rehypeComponent() {
-  return async (tree: UnistTree) => {
+  return async (tree: any) => {
     visit(tree, (node: UnistNode) => {
       const { value: src } = getNodeAttributeByName(node, "src") || {}
 
