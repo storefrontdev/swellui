@@ -13,6 +13,6 @@ export const siteConfig: SiteConfig = {
     "Components for your E-commerce store. Designed with Tailwind CSS.",
   links: {
     twitter: "https://twitter.com/cmcollin41",
-    github: "https://github.com/swellstore/swellui",
+    github: "https://github.com/swell-store/swellui",
   },
 }

@@ -16,11 +16,9 @@ export default function IndexPage() {
           <div className="flex flex-col col-span-1 md:col-span-2 items-start space-y-5">
             <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-5xl lg:text-6xl lg:leading-[1.1]">
               Build a Better Storefront, Faster. <br className="hidden sm:inline" />
-              Components Built with Radix UI and Tailwind CSS.
             </h1>
             <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-              Accessible and customizable components that you can copy and paste
-              into your apps. Free. Open Source. And Next.js 13 Ready.
+              A set of e-commerce hooks, components, and primitives to help you create your next storefront. Built with Radix UI and Tailwind CSS.
             </p>
 
             <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 md:flex-row">
@@ -38,7 +36,7 @@ export default function IndexPage() {
               >
                 GitHub
               </Link>
-              <pre className="hidden h-11 items-center justify-between space-x-2 overflow-x-auto rounded-lg border border-slate-100 bg-slate-100 pr-2 pl-6 dark:border-slate-700 dark:bg-black md:flex">
+              {/* <pre className="hidden h-11 items-center justify-between space-x-2 overflow-x-auto rounded-lg border border-slate-100 bg-slate-100 pr-2 pl-6 dark:border-slate-700 dark:bg-black md:flex">
                 <code className="font-mono text-sm font-semibold text-slate-900 dark:text-slate-50">
                   npx create-next-app -e https://github.com/storefrontdev/dennis
                 </code>
@@ -46,7 +44,7 @@ export default function IndexPage() {
                   value="npx create-next-app -e https://github.com/shadcn/next-template"
                   className="border-none text-slate-900 hover:bg-transparent dark:text-slate-50"
                 />
-              </pre>
+              </pre> */}
             </div>
           </div>
           <div className="relative col-span-1 px-5 md:px-0">
