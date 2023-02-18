@@ -1,7 +1,7 @@
 import * as React from "react"
 import Image from "next/image"
 import { useMDXComponent } from "next-contentlayer/hooks"
-import { NpmCommands } from "types/unist"
+// import { NpmCommands } from "types/unist"
 
 import { cn } from "@/lib/utils"
 import { Callout } from "@/components/callout"
@@ -173,7 +173,7 @@ const components = {
     __rawString__?: string
     __withMeta__?: boolean
     __src__?: string
-  } & NpmCommands) => {
+  } & any) => {
     return (
       <>
         <pre

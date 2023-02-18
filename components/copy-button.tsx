@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { DropdownMenuTriggerProps } from "@radix-ui/react-dropdown-menu"
-import { NpmCommands } from "types/unist"
+// import { NpmCommands } from "types/unist"
 
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
@@ -134,7 +134,7 @@ export function CopyWithClassNames({
 }
 
 interface CopyNpmCommandButtonProps extends DropdownMenuTriggerProps {
-  commands: Required<NpmCommands>
+  commands: any
 }
 
 export function CopyNpmCommandButton({

@@ -16,7 +16,7 @@ import { product } from "@/data"
 export function ProductOptionsDemo() {
 
   return (
-    <>
+  
       <div className="flex flex-col space-y-5">
 
         {product.options?.length > 0 && (
@@ -39,7 +39,7 @@ export function ProductOptionsDemo() {
 
                 ) : (
 
-                  <RadioGroup defaultValue="comfortable">
+                  <RadioGroup key={option.id} defaultValue="comfortable">
                     <label>{option.name}</label>
                     <div className="flex items-center space-x-2">
                       {option.values.map((value: any) => (
@@ -58,6 +58,6 @@ export function ProductOptionsDemo() {
         )}
 
       </div>
-    </>
+   
   )
 }

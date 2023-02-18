@@ -1,9 +1,9 @@
-import { UnistNode, UnistTree } from "types/unist"
+// import { UnistNode, UnistTree } from "types/unist"
 import { visit } from "unist-util-visit"
 
 export function rehypeNpmCommand() {
   return (tree: any) => {
-    visit(tree, (node: UnistNode) => {
+    visit(tree, (node: any) => {
       if (node.type !== "element" || node?.tagName !== "pre") {
         return
       }

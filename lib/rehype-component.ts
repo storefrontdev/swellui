@@ -1,12 +1,12 @@
 import fs from "fs"
 import path from "path"
-import { UnistNode, UnistTree } from "types/unist"
+// import { UnistNode, UnistTree } from "types/unist"
 import { u } from "unist-builder"
 import { visit } from "unist-util-visit"
 
 export function rehypeComponent() {
   return async (tree: any) => {
-    visit(tree, (node: UnistNode) => {
+    visit(tree, (node: any) => {
       const { value: src } = getNodeAttributeByName(node, "src") || {}
 
       if (node.name === "ComponentExample") {
@@ -119,11 +119,11 @@ export function rehypeComponent() {
   }
 }
 
-function getNodeAttributeByName(node: UnistNode, name: string) {
-  return node.attributes?.find((attribute) => attribute.name === name)
+function getNodeAttributeByName(node: any, name: string) {
+  return node.attributes?.find((attribute: any) => attribute.name === name)
 }
 
-function getComponentSourceFileContent(node: UnistNode) {
+function getComponentSourceFileContent(node: any) {
   const src = getNodeAttributeByName(node, "src")?.value as string
 
   if (!src) {
