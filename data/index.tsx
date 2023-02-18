@@ -16,7 +16,7 @@ export const product = {
         {
           "name": "Monthly",
           "description": "1 shake/month",
-          "price": 9,
+          "price": 29.99,
           "billing_schedule": {
             "interval": "monthly",
             "interval_count": 1,
@@ -29,7 +29,7 @@ export const product = {
         {
           "name": "Quarterly",
           "description": "1 shake/quarter",
-          "price": 9,
+          "price": 89.99,
           "billing_schedule": {
             "interval": "monthly",
             "interval_count": 1,

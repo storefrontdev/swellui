@@ -31,7 +31,7 @@ export function PurchaseOptionsDemo() {
               {product.purchase_options.subscription?.plans?.map((option, i) => {
                 return (
                   <SelectItem key={i} value={option.id}>
-                    {option.name}
+                    {option.name} - ${option.price}
                   </SelectItem>
                 )
               })}
