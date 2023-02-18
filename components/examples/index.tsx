@@ -29,6 +29,7 @@ import { MenubarDemo } from "@/components/examples/menubar/demo"
 import { PopoverDemo } from "@/components/examples/popover/demo"
 import { ProductOptionsDemo } from "@/components/examples/product-options/demo"
 import { ProgressDemo } from "@/components/examples/progress/demo"
+import { PurchaseOptionsDemo } from "@/components/examples/purchase-options/demo"
 import { RadioGroupDemo } from "@/components/examples/radio-group/demo"
 import { ScrollAreaDemo } from "@/components/examples/scroll-area/demo"
 import { SelectDemo } from "@/components/examples/select/demo"
@@ -90,6 +91,7 @@ export const examples = {
   PopoverDemo,
   ProductOptionsDemo,
   ProgressDemo,
+  PurchaseOptionsDemo,
   RadioGroupDemo,
   ScrollAreaDemo,
   SelectDemo,

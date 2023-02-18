@@ -60,8 +60,8 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: "Purchase Options",
-          href: "/docs/components/product-card",
-          disabled: true,
+          href: "/docs/components/purchase-options",
+          disabled: false,
           items: [],
         },
         {

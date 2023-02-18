@@ -1,5 +1,5 @@
 export const product = {
-  "name": "Iron dagger",
+  "name": "Protein Shake",
   "sku": "00090616",
   "active": true,
   "purchase_options": {
@@ -15,7 +15,7 @@ export const product = {
       "plans": [
         {
           "name": "Monthly",
-          "description": "1 dagger/month",
+          "description": "1 shake/month",
           "price": 9,
           "billing_schedule": {
             "interval": "monthly",
@@ -25,12 +25,25 @@ export const product = {
           },
           "id": "627c6f180d375a001296b593",
           "active": true
+        },
+        {
+          "name": "Quarterly",
+          "description": "1 shake/quarter",
+          "price": 9,
+          "billing_schedule": {
+            "interval": "monthly",
+            "interval_count": 1,
+            "limit": null,
+            "trial_days": 14
+          },
+          "id": "627c6f180d375a001296b594",
+          "active": true
         }
       ]
     }
   },
   "variable": true,
-  "description": "<h3>Damage: 7</h3><h3>Weight: 8</h3><h3>Health: 98</h3><h3>Speed: 1.4</h3><h3>Reach: 0.6</h3>",
+  "description": "<h3>Delicious protein shake</h3>",
   "tags": [],
   "meta_title": null,
   "meta_description": null,
@@ -50,7 +63,7 @@ export const product = {
   "options": [
     {
       "id": "627c6e36e80393798c171670",
-      "name": "Quality",
+      "name": "Flavor",
       "active": true,
       "input_type": "select",
       "variant": true,
@@ -60,14 +73,14 @@ export const product = {
       "values": [
         {
           "id": "627c6f18e80393798c171673",
-          "name": "Fine",
+          "name": "Vanilla",
           "price": null,
           "shipment_weight": null,
           "description": "A better-than-usual iron dagger"
         },
         {
           "id": "627c6f18e80393798c171674",
-          "name": "Rusty",
+          "name": "Chocolate",
           "price": 0,
           "shipment_weight": null,
           "description": "This dagger's seen better days"
@@ -77,7 +90,7 @@ export const product = {
     },
     {
       "id": "627c6e36e80393798c171670",
-      "name": "Color",
+      "name": "Size",
       "active": true,
       "input_type": "radio",
       "variant": true,
@@ -87,22 +100,22 @@ export const product = {
       "values": [
         {
           "id": "527c6f18e80393798c171673",
-          "name": "Silver",
-          "price": null,
+          "name": "30 Servings",
+          "price": "29.99",
           "shipment_weight": null,
           "description": "A better-than-usual iron dagger"
         },
         {
           "id": "527c6f18e80393798c171674",
-          "name": "Black",
-          "price": 0,
+          "name": "45 servings",
+          "price": "44.99",
           "shipment_weight": null,
           "description": "This dagger's seen better days"
         },
         {
           "id": "527c6f18e80393798c171675",
-          "name": "Red",
-          "price": 0,
+          "name": "100 servings",
+          "price": "99.99",
           "shipment_weight": null,
           "description": "This dagger's seen better days"
         }
