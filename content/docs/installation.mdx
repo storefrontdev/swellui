@@ -18,13 +18,27 @@ Follow the official guide to [install Tailwind CSS](https://tailwindcss.com/docs
 Add the following dependencies:
 
 ```bash
-npm install tailwindcss-animate class-variance-authority clsx tailwind-merge lucide-react
+npm install swell-js tailwindcss-animate class-variance-authority clsx tailwind-merge lucide-react
 ```
 
+[swell-js](https://developers/swell.is)
 [tailwindcss-animate](https://github.com)
 [class-variance-authority]()
 [clsx]()
 
+
+### Initialize Swell
+
+Add a file titled `swell.js` to your `/lib` folder in your root directory.
+
+```js
+
+  import swell from "swell-js";
+
+  const Swell = swell.init("spout-water", "pk_WiQPovPwyGYfwAtZdLjkg43ERKKCRCgf");
+
+  export { Swell }
+```
 
 ### Configure tailwind.config.js
 
@@ -37,34 +51,14 @@ const { fontFamily } = require("tailwindcss/defaultTheme")
 module.exports = {
   darkMode: ["class", '[data-theme="dark"]'],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-    },
-  },
+  theme: {},
   plugins: [require("tailwindcss-animate")],
 }
 ```
 
 ### Icons
 
-I use icons from [Lucide](https://lucide.dev). You can use any icon library you want.
+Primitive icons are from [Lucide](https://lucide.dev).  You can replace these icons with a library of your choice by updating the `@/components/ui/icons.tsx` file.
 
 ### Add a cn helper
 
@@ -83,9 +77,9 @@ That's it. You can now copy and paste components into `components/ui`. Then use 
 
 ## App structure
 
-And here's how I structure my app. I use Next.js, but this is not required.
+App structure using Next.js 13 app directory.
 
-```txt showLineNumbers {6-10,15-16}
+```txt showLineNumbers {6-10,15-17}
 .
 ├── app
 │   ├── layout.tsx
@@ -102,6 +96,7 @@ And here's how I structure my app. I use Next.js, but this is not required.
 ├── hooks
 ├── lib
 │   └── utils.ts
+|   └── swell.ts
 ├── pages
 ├── styles
 │   └── globals.css
@@ -112,7 +107,3 @@ And here's how I structure my app. I use Next.js, but this is not required.
 └── tsconfig.json
 ```
 
-- I place the UI components in the `components/ui` folder.
-- The rest of the components such as `<PageHeader />` and `<MainNav />` are placed in the `components` folder.
-- The `lib` folder contains all the utility functions. I have a `utils.ts` where I define the `cn` helper.
-- The `styles` folder contains the global CSS.

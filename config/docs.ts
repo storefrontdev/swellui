@@ -44,6 +44,26 @@ export const docsConfig: DocsConfig = {
       title: "Hooks",
       items: [
         {
+          title: "useImages",
+          href: "/docs/hooks/use-images",
+          items: [],
+        },
+        {
+          title: "useOptions",
+          href: "/docs/hooks/use-options",
+          items: [],
+        },
+        {
+          title: "useSelectedVariant",
+          href: "/docs/hooks/use-selected-options",
+          items: [],
+        },
+        {
+          title: "useVariant",
+          href: "/docs/hooks/use-variant",
+          items: [],
+        },
+        {
           title: "useVariants",
           href: "/docs/hooks/use-variants",
           items: [],
@@ -54,20 +74,21 @@ export const docsConfig: DocsConfig = {
       title: "Components",
       items: [
         {
+          title: "Product Card",
+          href: "/docs/components/product-card",
+          disabled: false,
+          items: [],
+        },
+        {
           title: "Product Options",
           href: "/docs/components/product-options",
+          disabled: false,
           items: [],
         },
         {
           title: "Purchase Options",
           href: "/docs/components/purchase-options",
           disabled: false,
-          items: [],
-        },
-        {
-          title: "Product Card",
-          href: "/docs/components/product-card",
-          disabled: true,
           items: [],
         },
         {

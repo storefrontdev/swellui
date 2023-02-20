@@ -4,7 +4,6 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
-  Circle,
   ClipboardCheck,
   Copy,
   CreditCard,
@@ -87,6 +86,11 @@ export const Icons = {
         d="M17 8C19.2091 8 21 6.20914 21 4C21 1.79086 19.2091 0 17 0C14.7909 0 13 1.79086 13 4C13 6.20914 14.7909 8 17 8Z"
         fill="currentcolor"
       ></path>
+    </svg>
+  ),
+  menu: (props: LucideProps) => (
+    <svg viewBox="0 0 24 24" {...props}>
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
   ),
   npm: (props: LucideProps) => (

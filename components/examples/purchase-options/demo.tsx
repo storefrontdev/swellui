@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button"
 
 export function PurchaseOptionsDemo() {
   return (
-    <Tabs defaultValue="subscribe" className="w-[400px]">
+    <Tabs defaultValue="subscribe" className="w-[400px] min-h-[300px] h-full">
       <TabsList className="w-full grid grid-cols-2 gap-5">
         <TabsTrigger value="subscribe" className="col-span-1">Subscribe (10% off)</TabsTrigger>
         <TabsTrigger value="one-time" className="col-span-1">One-Time</TabsTrigger>

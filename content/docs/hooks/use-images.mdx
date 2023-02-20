@@ -1,0 +1,36 @@
+---
+title: useImages()
+description: A hook that gets all the images from the product and variants then returns an array of unique images.
+---
+
+## Installation
+
+1. Copy the useImages() hook into your project:
+
+```jsx
+
+  'use client'
+  import { useEffect, useState } from 'react'
+
+  const useImages = (product: any) => {
+    const [images, setImages] = useState([]);
+  
+    useEffect(() => {
+        // check if incoming object is product or variant by checking if the object has parent_id.
+        const productImages = product?.images?.map((image: any) => image);
+        const variantImages = product?.variants?.results.map((variant: { images: any; }) => variant.images).flat().map((image: any) => image);
+        const allImages = productImages?.concat(variantImages).flat().filter((v: { file: { md5: any; }; },i: any,a: any[])=>a.findIndex(v2=>(v2.file.md5===v.file?.md5))===i)
+        setImages(allImages);
+    
+    }, [product]);
+    
+
+    return images
+  }
+
+  export { useImages }
+
+
+```
+
+

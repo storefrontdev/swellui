@@ -1,13 +1,30 @@
 export const product = {
-  "name": "Protein Shake",
-  "sku": "00090616",
+  "name": "Stance Icon Crew Socks",
+  "sku": null,
   "active": true,
+  "images": [
+    {
+      "file": {
+        "id": "63f286d932922800122faf56",
+        "date_uploaded": "2023-02-19T20:30:17.028Z",
+        "length": 138912,
+        "md5": "298586c0d0bea1a5ca5f1e8c054f6fc4",
+        "filename": null,
+        "content_type": "image/jpeg",
+        "metadata": null,
+        "url": "https://cdn.schema.io/storefrontdev/63f286d932922800122faf56/298586c0d0bea1a5ca5f1e8c054f6fc4",
+        "width": 800,
+        "height": 800
+      },
+      "id": "63f28749ea8d310012d42874"
+    }
+  ],
   "purchase_options": {
     "standard": {
       "active": true,
-      "price": 10,
-      "sale_price": null,
-      "sale": false,
+      "price": 11.99,
+      "sale": true,
+      "sale_price": 10.99,
       "prices": []
     },
     "subscription": {
@@ -15,140 +32,144 @@ export const product = {
       "plans": [
         {
           "name": "Monthly",
-          "description": "1 shake/month",
-          "price": 29.99,
+          "description": null,
+          "price": 9.99,
           "billing_schedule": {
             "interval": "monthly",
             "interval_count": 1,
             "limit": null,
-            "trial_days": 14
+            "trial_days": 0
           },
-          "id": "627c6f180d375a001296b593",
+          "id": "63f28749ea8d310012d42872",
           "active": true
         },
         {
-          "name": "Quarterly",
-          "description": "1 shake/quarter",
-          "price": 89.99,
+          "name": "Monthly",
+          "description": null,
+          "price": 29.99,
           "billing_schedule": {
             "interval": "monthly",
-            "interval_count": 1,
+            "interval_count": 3,
             "limit": null,
-            "trial_days": 14
+            "trial_days": 0
           },
-          "id": "627c6f180d375a001296b594",
+          "id": "63f28749ea8d310012d42873",
           "active": true
         }
       ]
     }
   },
   "variable": true,
-  "description": "<h3>Delicious protein shake</h3>",
+  "description": "They&#39;re called the Icon for a reason. One of our most-loved styles is back. Designed with our fan-favorite crew cut that&#39;s loved for it&#39;s seamless toe cap and stay-put fit.",
   "tags": [],
   "meta_title": null,
   "meta_description": null,
-  "slug": "iron-dagger",
+  "slug": "stance-icon-crew-socks",
   "attributes": {
-    "blade": "",
-    "dagger": "",
-    "type": [
-      "Fine",
-      "Rusty"
+    "color": [
+      "Brown",
+      "Navy",
+      "Orange",
+      "Rose"
+    ],
+    "size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": [
+      "Pima Cotton",
+      "Wool"
     ]
   },
   "delivery": "shipment",
   "bundle": null,
-  "price": 10,
+  "price": 11.99,
   "stock_tracking": false,
   "options": [
     {
-      "id": "627c6e36e80393798c171670",
-      "name": "Flavor",
+      "id": "63f2870f0182efdd22a912c2",
+      "name": "Color",
+      "values": [
+        {
+          "id": "63f287490182efdd22a912c4",
+          "name": "Brown"
+        },
+        {
+          "id": "63f287490182efdd22a912c5",
+          "name": "Navy"
+        },
+        {
+          "id": "63f287490182efdd22a912c6",
+          "name": "Orange"
+        },
+        {
+          "id": "63f287490182efdd22a912c7",
+          "name": "Rose"
+        }
+      ],
+      "variant": true,
+      "input_type": "select",
+      "required": true,
+      "active": true,
+      "attribute_id": "color"
+    },
+    {
+      "id": "63f2872f0182efdd22a912c3",
+      "name": "Size",
+      "values": [
+        {
+          "id": "63f287490182efdd22a912c8",
+          "name": "S"
+        },
+        {
+          "id": "63f287490182efdd22a912c9",
+          "name": "M"
+        },
+        {
+          "id": "63f287490182efdd22a912ca",
+          "name": "L"
+        },
+        {
+          "id": "63f287490182efdd22a912cb",
+          "name": "XL"
+        }
+      ],
+      "variant": true,
+      "input_type": "select",
+      "required": true,
+      "active": true,
+      "attribute_id": "size"
+    },
+    {
+      "id": "63f31bff0182efdd22a912cc",
+      "values": [
+        {
+          "name": "Pima Cotton",
+          "id": "63f31c0c0182efdd22a912cd"
+        },
+        {
+          "name": "Wool",
+          "id": "63f31c0c0182efdd22a912ce"
+        }
+      ],
+      "name": "Material",
       "active": true,
       "input_type": "select",
       "variant": true,
       "description": null,
       "required": true,
-      "attribute_id": "type",
-      "values": [
-        {
-          "id": "627c6f18e80393798c171673",
-          "name": "Vanilla",
-          "price": null,
-          "shipment_weight": null,
-          "description": "A better-than-usual iron dagger"
-        },
-        {
-          "id": "627c6f18e80393798c171674",
-          "name": "Chocolate",
-          "price": 0,
-          "shipment_weight": null,
-          "description": "This dagger's seen better days"
-        }
-      ],
-
-    },
-    {
-      "id": "627c6e36e80393798c171670",
-      "name": "Size",
-      "active": true,
-      "input_type": "radio",
-      "variant": true,
-      "description": null,
-      "required": true,
-      "attribute_id": "type",
-      "values": [
-        {
-          "id": "527c6f18e80393798c171673",
-          "name": "30 Servings",
-          "price": "29.99",
-          "shipment_weight": null,
-          "description": "A better-than-usual iron dagger"
-        },
-        {
-          "id": "527c6f18e80393798c171674",
-          "name": "45 servings",
-          "price": "44.99",
-          "shipment_weight": null,
-          "description": "This dagger's seen better days"
-        },
-        {
-          "id": "527c6f18e80393798c171675",
-          "name": "100 servings",
-          "price": "99.99",
-          "shipment_weight": null,
-          "description": "This dagger's seen better days"
-        }
-      ],
-
+      "attribute_id": "material"
     }
-
   ],
   "currency": "USD",
-  "sale": false,
-  "sale_price": null,
-  "prices": [],
-  "type": "standard",
-  "tax_class": "standard",
-  "date_created": "2022-05-12T02:21:12.534Z",
+  "type": "physical",
+  "date_created": "2023-02-19T20:29:54.137Z",
   "stock_status": null,
-  "date_updated": "2022-05-12T02:37:45.666Z",
-  "category_index": {
-    "sort": {
-      "627c6db5632818001272f8ed": 0,
-      "627c6dc30d375a001296a8b7": 0
-    },
-    "id": [
-      "627c6db5632818001272f8ed",
-      "627c6dc30d375a001296a8b7"
-    ]
-  },
-  "cross_sells": [],
-  "up_sells": [
-    {
-      "id": "627c7225e80393798c17167b",
-      "product_id": "627c715e632818001274ebd8"
-    }
-  ],
-"id": "627c6f180d375a001296b580"
+  "date_updated": "2023-02-20T07:06:53.427Z",
+  "prices": [],
+  "sale": true,
+  "sale_price": 10.99,
+  "id": "63f286c2e826fc001239e183"
 }

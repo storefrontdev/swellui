@@ -25,17 +25,6 @@ export const useImages = (product: any) => {
   return images
 }
 
-export const useMedia = (product: any) => {
-  const images = useImages(product);
-  const [media, setMedia] = useState([]);
-  
-  useEffect(() => {
-    setMedia((media) => [...media, ...images]);
-  }, [images]);
-  
-  return media;
-}
-
 // create an options type for any array
 type Optionstype = any;
 
@@ -57,11 +46,16 @@ export const useOptions = (product: any) => {
   return options?.filter(unique);
 }
 
+// create an selectedOptions type for any array
+type SelectedOptions = {}
+
 export const useSelectedOptions = () => {
-  const [selectedOptions, setSelectedOptions] = useState([{}]);
+  const [selectedOptions, setSelectedOptions] = React.useState<SelectedOptions>([{}]);
+
+
 
   useEffect(() => {
-    setSelectedOptions((selectedOptions) => [...selectedOptions]);
+    setSelectedOptions((selectedOptions: any) => [...selectedOptions]);
   }, [setSelectedOptions, selectedOptions]);
 
   return [selectedOptions, setSelectedOptions];

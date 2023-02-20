@@ -8,7 +8,7 @@ import { MainNavItem } from "types/nav"
 import { docsConfig } from "@/config/docs"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { Icons } from "@/components/icons"
+import { Bars3Icon } from "@heroicons/react/24/outline"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -62,8 +62,7 @@ export function MainNav({ items, children }: MainNavProps) {
             variant="ghost"
             className="-ml-4 text-base hover:bg-transparent focus:ring-0 md:hidden"
           >
-            <Icons.logo className="mr-2 h-4 w-4" />{" "}
-            <span className="font-bold">Menu</span>
+            <Bars3Icon className="w-6 h-6 text-gray-900 dark:text-gray-50" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent
@@ -73,7 +72,7 @@ export function MainNav({ items, children }: MainNavProps) {
         >
           <DropdownMenuLabel>
             <Link href="/" className="flex items-center">
-              <Icons.logo className="mr-2 h-4 w-4" /> {siteConfig.name}
+              {siteConfig.name}
             </Link>
           </DropdownMenuLabel>
           <DropdownMenuSeparator />

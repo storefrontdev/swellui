@@ -1,0 +1,22 @@
+---
+title: useSelectedOptions()
+description: The active options for a product. This can be used to return the active variant.
+---
+
+## Introduction
+
+1. Copy and paste the following code:
+
+```jsx
+
+  export const useSelectedOptions = () => {
+    const [selectedOptions, setSelectedOptions] = useState([{}]);
+
+    useEffect(() => {
+      setSelectedOptions((selectedOptions) => [...selectedOptions]);
+    }, [setSelectedOptions, selectedOptions]);
+
+    return [selectedOptions, setSelectedOptions];
+  }
+
+```

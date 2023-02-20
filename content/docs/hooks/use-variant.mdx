@@ -1,0 +1,38 @@
+---
+title: useVariant()
+description: A hook that gets the current active variant based on the selected options.
+---
+
+
+## Installation
+
+1. Copy the useVariant() hook into your project:
+
+```jsx
+
+  'use client'
+  import { useEffect, useState } from "react";
+  import { Swell } from "@/lib/swell"
+
+  export const useVariant = (product, options) => {
+    // options are an object like { Color: 'Red', Size: 'Small' }
+  
+    const [variant, setVariant] = useState([]);
+
+    const getVariant = async () => {
+      // Resolves the variation price, sale_price, orig_price, and stock_status values based on the customer's chosen options.
+      const v = await swell.products.variation(product, options)
+
+
+      return v
+    }
+
+    getVariant().then((variant) => {
+      setVariant(variant);
+    })
+
+    return variant
+  };
+
+
+```

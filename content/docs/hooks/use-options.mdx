@@ -1,0 +1,33 @@
+---
+title: useOptions()
+description: Get all the product options.
+---
+
+## Introduction
+
+1. Copy the useImages() hook into your project:
+
+```jsx
+  // create an options type for any array
+  type Optionstype = any;
+
+  const useOptions = (product: any) => {
+
+    const [options, setOptions] = React.useState<Optionstype>([]);
+
+    function unique(value: any, index: any, self: string | any[]) {
+      return self.indexOf(value) === index;
+    }
+
+
+    useEffect(() => {
+      product?.options?.map((option: any) => {
+        setOptions((options: any) => [...options, option]);
+      });
+    }, [product]);
+
+    return options?.filter(unique);
+  }
+
+  export { useOptions }
+```

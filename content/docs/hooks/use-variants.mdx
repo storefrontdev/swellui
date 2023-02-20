@@ -13,7 +13,7 @@ description: A hook that uses the current product's variants
   'use client'
 
 
-  export const useVariants = (product: any) => {
+ const useVariants = (product: any) => {
     const [variants, setVariants] = useState([]);
 
     function unique(value: any, index: any, self: string | any[]) {
@@ -28,6 +28,6 @@ description: A hook that uses the current product's variants
     return variants?.filter(unique);
   }
 
-
+  export { useVariants }
 
 ```

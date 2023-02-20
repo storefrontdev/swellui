@@ -560,6 +560,32 @@
         "async": false
       }
     },
+    "(app-client)/./components/examples/product-card/demo.tsx": {
+      "": {
+        "id": "(sc_client)/./components/examples/product-card/demo.tsx",
+        "name": "",
+        "chunks": [
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./components/examples/product-card/demo.tsx",
+        "name": "*",
+        "chunks": [
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
+        ],
+        "async": false
+      },
+      "ProductCardDemo": {
+        "id": "(sc_client)/./components/examples/product-card/demo.tsx",
+        "name": "ProductCardDemo",
+        "chunks": [
+          "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./components/examples/product-options/demo.tsx": {
       "": {
         "id": "(sc_client)/./components/examples/product-options/demo.tsx",
@@ -2417,6 +2443,32 @@
     "PopoverDemo": {
       "id": "(app-client)/./components/examples/popover/demo.tsx",
       "name": "PopoverDemo",
+      "chunks": [
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
+      ],
+      "async": false
+    }
+  },
+  "/Users/chrisc/Desktop/www/components/examples/product-card/demo.tsx": {
+    "": {
+      "id": "(app-client)/./components/examples/product-card/demo.tsx",
+      "name": "",
+      "chunks": [
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./components/examples/product-card/demo.tsx",
+      "name": "*",
+      "chunks": [
+        "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
+      ],
+      "async": false
+    },
+    "ProductCardDemo": {
+      "id": "(app-client)/./components/examples/product-card/demo.tsx",
+      "name": "ProductCardDemo",
       "chunks": [
         "app/docs/[[...slug]]/page:app/docs/[[...slug]]/page"
       ],

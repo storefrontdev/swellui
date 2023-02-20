@@ -27,6 +27,7 @@ import { InputWithText } from "@/components/examples/input/with-text"
 import { LabelDemo } from "@/components/examples/label/demo"
 import { MenubarDemo } from "@/components/examples/menubar/demo"
 import { PopoverDemo } from "@/components/examples/popover/demo"
+import { ProductCardDemo } from "@/components/examples/product-card/demo"
 import { ProductOptionsDemo } from "@/components/examples/product-options/demo"
 import { ProgressDemo } from "@/components/examples/progress/demo"
 import { PurchaseOptionsDemo } from "@/components/examples/purchase-options/demo"
@@ -89,6 +90,7 @@ export const examples = {
   LabelDemo,
   MenubarDemo,
   PopoverDemo,
+  ProductCardDemo,
   ProductOptionsDemo,
   ProgressDemo,
   PurchaseOptionsDemo,

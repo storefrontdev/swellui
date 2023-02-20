@@ -54,18 +54,18 @@ export function ComponentExample({
             codeString && <CopyButton value={codeString} />
           )}
         </div>
-        <TabsContent value="preview" className="p-0">
+        <TabsContent value="preview" className="p-0 bg-white dark:bg-gray-900">
           <div className="flex min-h-[350px] items-center justify-center p-10">
             {Example}
           </div>
         </TabsContent>
         <TabsContent value="code" className="border-none p-0">
           <div className="flex flex-col space-y-4">
-            <div className="w-full rounded-md [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto [&_button]:hidden">
+            <div className="w-full rounded-sm [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto [&_button]:hidden">
               {Code}
             </div>
             {Children && (
-              <div className="rounded-md [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto [&_button]:hidden">
+              <div className="rounded-sm [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto [&_button]:hidden">
                 {Children}
               </div>
             )}
