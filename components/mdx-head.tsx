@@ -22,9 +22,9 @@ export default function MdxHead({ params, og }: MdxHeadProps) {
 
   const title = `${mdxDoc.title} - ${siteConfig.name}`
   const url = process.env.NEXT_PUBLIC_APP_URL
-  const ogUrl = new URL(`${url}/og.jpg`)
+  // const ogUrl = new URL(`${url}/og.jpg`)
 
-  const ogTitle = og?.heading || mdxDoc.title
+  // const ogTitle = og?.heading || mdxDoc.title
   const ogDescription = mdxDoc.description || siteConfig.description
 
   return (
@@ -33,7 +33,7 @@ export default function MdxHead({ params, og }: MdxHeadProps) {
       <link rel="canonical" href={absoluteUrl(mdxDoc.slug)} />
       <meta name="description" content={ogDescription} />
       <meta charSet="utf-8" />
-      <link
+      {/* <link
         rel="apple-touch-icon"
         sizes="180x180"
         href="/apple-touch-icon.png"
@@ -61,7 +61,7 @@ export default function MdxHead({ params, og }: MdxHeadProps) {
       <meta name="twitter:description" content={ogDescription} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={url} />
-      <meta name="twitter:image" content={ogUrl.toString()} />
+      <meta name="twitter:image" content={ogUrl.toString()} /> */}
     </>
   )
 }

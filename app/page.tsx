@@ -2,10 +2,6 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { AppleMusicDemo } from "@/components/apple-music-demo"
-import { CopyButton } from "@/components/copy-button"
-import { PromoVideo } from "@/components/promo-video"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { buttonVariants } from "@/components/ui/button"
 import Image from "next/image"
 export default function IndexPage() {

@@ -2,14 +2,14 @@ import { siteConfig } from "@/config/site"
 
 export default function Head() {
   const url = process.env.NEXT_PUBLIC_APP_URL
-  const ogUrl = new URL(`${url}/og.jpg`)
+  // const ogUrl = new URL(`${url}/og.jpg`)
 
   return (
     <>
       <title>{`${siteConfig.name} - ${siteConfig.description}`}</title>
       <meta charSet="utf-8" />
       <meta name="description" content={siteConfig.description} />
-      <link
+      {/* <link
         rel="apple-touch-icon"
         sizes="180x180"
         href="/apple-touch-icon.png"
@@ -37,7 +37,7 @@ export default function Head() {
       <meta name="twitter:description" content={siteConfig.description} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={url?.toString()} />
-      <meta name="twitter:image" content={ogUrl.toString()} />
+      <meta name="twitter:image" content={ogUrl.toString()} /> */}
     </>
   )
 }
